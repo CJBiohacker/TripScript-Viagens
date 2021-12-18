@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./images/TripS.svg" type="image/x-icon">
+
+    <!-- LINK ESTILO CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- LINK GLIDE.JS SLIDE/CAROSEL ESTILO CSS -->
+    <link rel="stylesheet" href="./styles/glide.core.min.css">
+    <link rel="stylesheet" href="./styles/glide.theme.min.css">
+
+    <!-- LINK FONTAWESOME ÍCONES CUSTOMIZADOS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- LINK GOOGLE FONTS FONTE UBUNTU -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>TripScript</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-container">
+            <a href=""><img src="./images/TripScript.svg" alt="TripScript Logo"></a>
+            <ul class="navbar-list text-2nd">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#promoçoes">Promoções</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="account-container">
+                <i class="account-photo fas fa-user-circle"></i>
+                <p class="text-2nd">Entrar</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <figure>
+            <div class="glide" id="options-type">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides" id="slide-container">
+                        <li class="glide__slide"><img src="./images/fernando-de-noronha.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/gruta-lagoazul.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/jardimbotanicoSP.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/penedo.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/porto-de-galinhas.svg" alt=""></li>
+                        <li class="glide__slide"><img src="./images/praia-camburi-vitoriaes.svg" alt=""></li>
+                    </ul>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                    </div>
+                </div>
+            </div>
+        </figure>
+
+        <div id=home>
+            <img class="home-logo" src="./images/TripScript Logo Alt.svg" alt="TripScript Logo">
+            <section class="home-intro">
+                <h1>Seja Bem Vindo à TripScript</h1>
+                <p>Uma empresa de serviços com um time de profissionais que têm como missão serem os(as) protagonistas
+                    na
+                    realização do seu sonho em viajar.</p>
+                <p>Estamos à mais de 5 anos no mercado e estamos comprometido(a)s em
+                    melhorar nossos serviços a cada ano para proporcionar viagens únicas para nossos clientes.</p>
+            </section>
+            <section class="home-intro2">
+                <h1>Por quê viajar com a TripScript ?</h1>
+                <p>Permitimos várias formas de pagamentos: Pix, Débito Online, Crédito (até 12x s/ juros) e Boleto
+                    Bancário.</p>
+                <p>O viajante não precisa realizar qualquer pagamento no balcão do estabelecimento. Tudo é
+                    resolvido online.</p>
+                <p>Se pintar algum imprevisto, o viajante não precisa se preocupar: o cancelamento é grátis até a
+                    véspera do check-in. E em caso de pacote promocional, quando a viagem for agendada.</p>
+                <p>Disponibilizamos um canal de dúvidas via Whatsapp, Telegram e/ou Signal no horário de 8h às 22h.</p>
+            </section>
+        </div>
+
+        <div id="destinos">
+            <div class="destinos-title">
+                <h1>Escolha os melhores Destinos do Brasil</h1>
+            </div>
+
+            <div id="destinos-container">
+                <div class="destinos-card">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Paraty - Rio de Janeiro</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destinos-card">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://www.ilhagrande.com.br/wp-content/uploads/2015/03/enseada-de-aracatiba-ilha-grande-7.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Ilha Grande - Rio de Janeiro</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;2-3 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$599,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destinos-card">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://viagemeturismo.abril.com.br/wp-content/uploads/2016/12/thinkstockphotos-4744489501.jpeg?quality=70&strip=info&w=1024"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Recife - Pernambuco</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;3-4 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Casa</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$649,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destinos-card">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://a.cdn-hotels.com/gdcs/production178/d1743/caf5443a-60c8-442a-bca4-ae9afc154fea.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Fortaleza - Ceará</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Janta</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$1299,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destinos-card">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://www.anchieta.es.gov.br/uploads/filemanager/Praias/RA-0799.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Anchieta - Espírito Santo</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Pousada</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$459,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="destinos-card">
+                    <a href="#" style="text-decoration: none; color: black;">
+                        <img src="https://thumbcdn-2.hotelurbano.net/7IAyNj-1hM4sKB2ESFHqbyGye98=/fit-in/x562/filters:strip_icc():max_bytes(102400)/http%3A//s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2021/12/10/12/00/1_shutterstock_1363425368.jpg"
+                            class="card-img-top" alt="Paraty RJ">
+                        <div class="card-body">
+                            <h3 class="card-title">Paraty - Rio de Janeiro</h3>
+                            <div class="card-info">
+                                <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias</p>
+                                <div>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                    <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                </div>
+                                <p class="card-text"> <small>À partir de</small> <strong>R$499,00</strong></p>
+                                <p class="card-text"><small>em até 12x s/ juros</small></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="promoçoes">
+                <div class="promoçoes-title">
+                    <h1>Aproveite as Promoções com pacotes exclusivos</h1>
+                </div>
+
+                <div id="promoçoes-container">
+                    <div class="promoçoes-card">
+                        <a href="#" style="text-decoration: none; color: black;">
+                            <img src="https://i0.wp.com/iovbrasil.com.br/wp-content/uploads/2020/08/REGI%C3%83O-SUDESTE.jpg"
+                                class="card-img-top" alt="Paraty RJ">
+                            <div class="card-body">
+                                <h3 class="card-title">Pacote - Região Sudeste</h3>
+                                <div class="card-info">
+                                    <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;10-12 diárias
+                                    </p>
+                                    <div>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hotel</p>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Almoço</p>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Carro alugado</p>
+                                    </div>
+                                    <p class="card-text"> <small>À partir de</small> <small><del>R$3150,00</del></small>
+                                        <strong>R$2650,00</strong>
+                                    </p>
+                                    <p class="card-text"><small>em até 12x s/ juros</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="promoçoes-card">
+                        <a href="#" style="text-decoration: none; color: black;">
+                            <img src="https://www.jornalcontabil.com.br/wp-content/uploads/2019/06/Europa.jpg"
+                                class="card-img-top" alt="Paraty RJ">
+                            <div class="card-body">
+                                <h3 class="card-title">Pacote - União Européia</h3>
+                                <div class="card-info">
+                                    <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;12-15 diárias
+                                    </p>
+                                    <div>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Hostel</p>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Café da Manhã</p>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Guia Turístico</p>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;5 países inclusos
+                                        </p>
+                                    </div>
+                                    <p class="card-text"> <small>À partir de</small> <small><del>R$5150,00</del></small>
+                                        <strong>R$4290,00</strong>
+                                    <p class="card-text"><small>em até 12x s/ juros</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="promoçoes-card">
+                        <a href="#" style="text-decoration: none; color: black;">
+                            <img src="https://essenceturismo.com.br/wp-content/uploads/2019/11/Orlando-DISNEY.jpg"
+                                class="card-img-top" alt="Paraty RJ">
+                            <div class="card-body">
+                                <h3 class="card-title">Pacote - Disney </h3>
+                                <div class="card-info">
+                                    <p class="card-text"><i class="fas fa-calendar-week"></i>&nbsp;&nbsp;5-7 diárias
+                                    </p>
+                                    <div>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Quarto Casal</p>
+                                        <p class="card-text"><i class="fas fa-check"></i>&nbsp;&nbsp;Guia Turístico</p>
+                                    </div>
+                                    <p class="card-text"> <small>À partir de</small> <small><del>R$3160,00</del></small>
+                                        <strong>R$1650,00</strong>
+                                    <p class="card-text"><small>em até 12x s/ juros</small></p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contato">
+
+                <div class="contato-title">
+                    <h1>Tem dúvidas ou perguntas?<br>Entre em Contato conosco</h1>
+                </div>
+
+                <div class="contato-container">
+                    <form class="contato-form" action="#">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome...">
+
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome...">
+
+                        <label for="país">País</label>
+                        <select id="país" name="país">
+                            <option value="australia">Brasil</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">França</option>
+                            <option value="usa">Alemanha</option>
+                            <option value="australia">Africa do Sul</option>
+                            <option value="canada">Moçambique</option>
+                            <option value="usa">Japão</option>
+                            <option value="australia">Coréia do Sul</option>
+                            <option value="australia">China</option>
+                            <option value="australia">Índia</option>
+                            <option value="australia">Rússia</option>
+                        </select>
+
+                        <label for="assunto">Assunto</label>
+                        <textarea id="assunto" name="assunto"
+                            placeholder="Digite suas dúvidas e/ou perguntas..."></textarea>
+
+                        <input id="contato-button" type="submit" value="Enviar">
+                    </form>
+                </div>
+
+            </div>
+    </main>
+
+    <!-- SCRIPT DO SLIDE/CAROUSEL GLIDE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        let input = document.querySelector('#options-type')
+
+        let glide = new Glide('#options-type', {
+            autoplay: input.value = 3500,
+            hoverpause: false,
+            perView: 1,
+            gap: 0
+        })
+
+        input.addEventListener('input', function (event) {
+            glide.update({
+                autoplay: (event.target.value != 0) ? event.target.value : false
+            })
+        })
+
+        glide.mount()
+    </script>
+</body>
+
+</html>

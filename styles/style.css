@@ -1,0 +1,437 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body .text-2nd {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+}
+
+* body .text-2nd :hover {
+  opacity: 0.6;
+}
+
+* body header {
+  padding: 1.2rem;
+  background-color: #892BE2C8;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+* body header .navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  * body header .navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+}
+
+* body header .navbar-container .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  * body header .navbar-container .navbar-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+* body header .navbar-container .navbar-list > li {
+  list-style: none;
+}
+
+* body header .navbar-container .navbar-list > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+* body header .navbar-container .account-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.5rem;
+  color: white;
+}
+
+* body main figure #slide-container {
+  width: 100vw;
+  height: 80vh;
+}
+
+* body main #home {
+  width: 100%;
+  height: 80vh;
+  background-color: #892BE2C8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 10% 30% 5% 40% 15%;
+      grid-template-rows: 10% 30% 5% 40% 15%;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+* body main #home .home-logo {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+* body main #home .home-intro {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+* body main #home .home-intro > p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+
+* body main #home .home-intro2 {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+* body main #home .home-intro2 > p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+
+* body main #destinos .destinos-title {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+* body main #destinos #destinos-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+* body main #destinos #destinos-container .destinos-card {
+  width: 25vw;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: rgba(234, 232, 232, 0.8);
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+* body main #destinos #destinos-container .card-img-top {
+  width: 25vw;
+  height: 28vh;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+* body main #destinos #destinos-container .card-body {
+  padding: 0.5rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+
+* body main #destinos #destinos-container .card-body .card-title {
+  font-family: "Poppins", sans-serif;
+}
+
+* body main #destinos #destinos-container .card-body .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+* body main #destinos #destinos-container .card-body .card-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* body main #destinos #destinos-container .card-body .card-info .card-text {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+* body main #destinos #destinos-container .card-body .card-info .card-text > strong {
+  color: #32960E;
+  font-size: 1.8rem;
+}
+
+* body main #promoçoes {
+  background-color: #CD23FA;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+* body main #promoçoes .promoçoes-title {
+  text-align: center;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+* body main #promoçoes #promoçoes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+* body main #promoçoes #promoçoes-container .promoçoes-card {
+  width: 25vw;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: rgba(234, 232, 232, 0.8);
+  -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+* body main #promoçoes #promoçoes-container .card-img-top {
+  width: 25vw;
+  height: 28vh;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+* body main #promoçoes #promoçoes-container .card-body {
+  padding: 0.5rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-title {
+  font-family: "Poppins", sans-serif;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info .card-text {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+* body main #promoçoes #promoçoes-container .card-body .card-info .card-text > strong {
+  color: #32960E;
+  font-size: 1.8rem;
+}
+
+* body main #contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2rem;
+}
+
+* body main #contato .contato-title {
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+* body main #contato .contato-container {
+  width: 50vw;
+  border-radius: 8px;
+  background-color: #AF71E8;
+  padding: 1.4rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+* body main #contato .contato-container .contato-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* body main #contato .contato-container .contato-form > label {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+* body main #contato .contato-container .contato-form > input, * body main #contato .contato-container .contato-form select {
+  padding: 0.8rem;
+  border-radius: 2px;
+}
+
+* body main #contato .contato-container .contato-form #contato-button {
+  background-color: #F022D8;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+* body main #contato .contato-container .contato-form > textarea {
+  height: 25vh;
+  padding: 0.6rem;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+  resize: none;
+}
+/*# sourceMappingURL=style.css.map */
