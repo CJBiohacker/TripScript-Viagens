@@ -1,349 +1,341 @@
 // Variáveis SASS
-$fonteGeral:'Ubuntu', sans-serif;
-$fonteTitulo:'Poppins', sans-serif;
+$fonteGeral: "Ubuntu", sans-serif;
+$fonteTitulo: "Poppins", sans-serif;
 
 $bg: rgba(234, 232, 232, 0.8);
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    body {
+  body {
+    .text-2nd {
+      font-family: $fonteGeral;
+      font-size: 18px;
 
-        .text-2nd {
-            font-family: $fonteGeral;
-            font-size: 18px;
+      :hover {
+        opacity: 0.6;
+      }
+    }
 
-            :hover {
-                opacity: 0.6;
-            }
+    header {
+      padding: 1.2rem;
+      background-color: #892be2c8;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+
+      .navbar-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
         }
 
-        header {
-            padding: 1.2rem;
-            background-color: #892BE2C8;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-            
-            
-            .navbar-container {
+        .navbar-list {
+          display: flex;
+          flex-direction: row;
+          gap: 2.5rem;
+
+          @media screen and (max-width: 480px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+          }
+
+          > li {
+            list-style: none;
+
+            > a {
+              text-decoration: none;
+              color: white;
+            }
+          }
+        }
+
+        .account-container {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          color: white;
+
+          .account-photo {
+          }
+        }
+      }
+    }
+
+    main {
+      figure {
+        #slide-container {
+          width: 600dvw !important;
+
+          .slide-img {
+            width: 100dvw !important;
+          }
+        }
+      }
+
+      #home {
+        width: 100%;
+        height: 80vh;
+        background-color: #892be2c8;
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 30% 5% 40% 15%;
+
+        font-family: $fonteTitulo;
+        color: white;
+
+        .home-logo {
+          grid-row-start: 3;
+          grid-column-start: 1;
+          justify-self: center;
+          align-self: center;
+        }
+
+        .home-intro {
+          grid-row-start: 2;
+          grid-column-start: 2;
+
+          > p {
+            font-family: $fonteGeral;
+            font-size: 1.2rem;
+          }
+        }
+
+        .home-intro2 {
+          grid-row-start: 4;
+          grid-column-start: 2;
+
+          > p {
+            font-family: $fonteGeral;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      #destinos {
+        .destinos-title {
+          text-align: center;
+          padding: 2rem 0;
+          font-family: $fonteTitulo;
+        }
+
+        #destinos-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+
+          gap: 2rem;
+
+          .destinos-card {
+            width: 25vw;
+            // height: 50vh;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            background: $bg;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+          }
+
+          .card-img-top {
+            width: 25vw;
+            height: 28vh;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+
+          .card-body {
+            padding: 0.5rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            .card-title {
+              font-family: $fonteTitulo;
+            }
+
+            .card-info {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+
+              > div {
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                                
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+              }
 
-                @media screen and (max-width: 480px) {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap:2rem;
+              .card-text {
+                font-family: $fonteGeral;
+                text-align: center;
+
+                > strong {
+                  color: #32960e;
+                  font-size: 1.8rem;
                 }
-              
-                .navbar-list {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 2.5rem;
-
-                    @media screen and (max-width: 480px) {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: space-around;
-                        align-items: center;
-                    }
-
-                    >li {
-                        list-style: none;
-
-                        >a {
-                            text-decoration: none;
-                            color: white;
-                        }
-                    }
-                }
-
-                .account-container {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 0.5rem;
-                    color: white;
-
-                    .account-photo {
-                        
-                        
-                    }
-
-                }
-
+              }
             }
-        
+          }
+        }
+      }
+
+      #promoçoes {
+        background-color: #cd23fa;
+
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+
+        .promoçoes-title {
+          text-align: center;
+          padding: 2rem 0;
+          font-family: $fonteTitulo;
+          color: white;
         }
 
-        main {
-            
-            figure {
-                #slide-container {
-                    width: 100vw;
-                    height: 80vh;
-                    
-                }
+        #promoçoes-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+
+          gap: 2rem;
+
+          .promoçoes-card {
+            width: 25vw;
+            // height: 50vh;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            background: $bg;
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+          }
+
+          .card-img-top {
+            width: 25vw;
+            height: 28vh;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+          }
+
+          .card-body {
+            padding: 0.5rem 1.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            .card-title {
+              font-family: $fonteTitulo;
             }
 
-            #home {
-                width: 100%;
-                height: 80vh;
-                background-color: #892BE2C8;
-                
-                display: grid;
-                grid-template-columns: 50% 50%;
-                grid-template-rows: 10% 30% 5% 40% 15%;
+            .card-info {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
 
-                font-family: $fonteTitulo;
-                color: white;
-
-                .home-logo {
-                    grid-row-start: 3;
-                    grid-column-start: 1;
-                    justify-self: center;
-                    align-self: center;
-                }
-
-                .home-intro {
-                    grid-row-start: 2;
-                    grid-column-start: 2;
-
-                    >p {
-                        font-family: $fonteGeral;
-                        font-size: 1.2rem;
-                    }
-                }
-
-                .home-intro2 {
-                    grid-row-start: 4;
-                    grid-column-start: 2;   
-
-                    >p {
-                        font-family: $fonteGeral;
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-
-            #destinos {
-
-                .destinos-title {
-                    text-align: center;
-                    padding: 2rem 0;
-                    font-family: $fonteTitulo;
-                }
-                
-                #destinos-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    flex-wrap: wrap;
-                    
-                    gap: 2rem;
-                    
-                    .destinos-card {
-                        width: 25vw;
-                        // height: 50vh;
-                        border-top-left-radius: 8px;
-                        border-top-right-radius: 8px;
-                        
-                        display:flex;
-                        flex-direction: column;
-                        text-align: center;
-                        
-                        background: $bg;
-                        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-                    }
-          
-                    .card-img-top {
-                        width: 25vw;
-                        height: 28vh;
-                        border-top-left-radius: 8px;
-                        border-top-right-radius: 8px;
-                    }          
-    
-                    .card-body {
-                        padding: 0.5rem 1.25rem;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 0.8rem;
-    
-                        .card-title {
-                            font-family: $fonteTitulo;
-                        }
-    
-                        .card-info {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 0.5rem;
-
-                            >div {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
-                                flex-wrap: wrap;
-                            }
-
-                            .card-text {
-                                font-family: $fonteGeral;
-                                text-align: center;
-
-                                >strong {
-                                    color: #32960E;
-                                    font-size: 1.8rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            #promoçoes {
-                background-color: #CD23FA;
-                
-                margin-top: 2rem;
-                padding-bottom: 2rem;
-
-                .promoçoes-title {
-                    text-align: center;
-                    padding: 2rem 0;
-                    font-family: $fonteTitulo;
-                    color: white;
-                }
-
-                #promoçoes-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-evenly;
-                    flex-wrap: wrap;
-                    
-                    gap: 2rem;
-                    
-                    .promoçoes-card {
-                        width: 25vw;
-                        // height: 50vh;
-                        border-top-left-radius: 8px;
-                        border-top-right-radius: 8px;
-                        
-                        display:flex;
-                        flex-direction: column;
-                        text-align: center;
-                        
-                        background: $bg;
-                        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-                    }
-          
-                    .card-img-top {
-                        width: 25vw;
-                        height: 28vh;
-                        border-top-left-radius: 8px;
-                        border-top-right-radius: 8px;
-                    }          
-    
-                    .card-body {
-                        padding: 0.5rem 1.25rem;
-                        display: flex;
-                        flex-direction: column;
-                        gap: 0.8rem;
-    
-                        .card-title {
-                            font-family: $fonteTitulo;
-                        }
-    
-                        .card-info {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 0.5rem;
-
-                            >div {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
-                                flex-wrap: wrap;
-                            }
-
-                            .card-text {
-                                font-family: $fonteGeral;
-                                text-align: center;
-
-                                >strong {
-                                    color: #32960E;
-                                    font-size: 1.8rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            #contato {
+              > div {
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding-bottom: 2rem;
-              
-                .contato-title {                 
-                    padding: 2rem 0;
-                    font-family: $fonteTitulo;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+              }
+
+              .card-text {
+                font-family: $fonteGeral;
+                text-align: center;
+
+                > strong {
+                  color: #32960e;
+                  font-size: 1.8rem;
                 }
-
-                .contato-container {     
-                    width: 50vw;  
-                    border-radius: 8px;
-                    background-color: #AF71E8;
-                    padding: 1.4rem;
-                    font-family: $fonteGeral;
-
-                    .contato-form {
-                        display: flex;
-                        flex-direction: column;
-                        // gap: 0.5rem;
-                        
-                        >label {
-                            font-size: 1.2rem;
-                            padding-top: 0.5rem;
-                            padding-bottom: 0.2rem;
-                        }
-
-                        >input, select {
-                            padding: 0.8rem;
-                            border-radius: 2px;                        
-                        }
-
-                        #contato-button {
-                            background-color: #F022D8;
-                            color: white;
-                            font-size: 1.8rem;
-                            cursor: pointer;
-                        }
-
-                        >textarea {
-                            height: 25vh;
-                            padding: 0.6rem;
-                            border-radius: 2px;
-                            margin-bottom: 2rem;
-                            resize: none;
-                        }
-                    }
-                }
+              }
             }
+          }
+        }
+      }
+
+      #contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+
+        .contato-title {
+          padding: 2rem 0;
+          font-family: $fonteTitulo;
         }
 
-        footer {
+        .contato-container {
+          width: 50vw;
+          border-radius: 8px;
+          background-color: #af71e8;
+          padding: 1.4rem;
+          font-family: $fonteGeral;
 
+          .contato-form {
+            display: flex;
+            flex-direction: column;
+            // gap: 0.5rem;
+
+            > label {
+              font-size: 1.2rem;
+              padding-top: 0.5rem;
+              padding-bottom: 0.2rem;
+            }
+
+            > input,
+            select {
+              padding: 0.8rem;
+              border-radius: 2px;
+            }
+
+            #contato-button {
+              background-color: #f022d8;
+              color: white;
+              font-size: 1.8rem;
+              cursor: pointer;
+            }
+
+            > textarea {
+              height: 25vh;
+              padding: 0.6rem;
+              border-radius: 2px;
+              margin-bottom: 2rem;
+              resize: none;
+            }
+          }
         }
+      }
     }
+
+    footer {
+    }
+  }
 }
